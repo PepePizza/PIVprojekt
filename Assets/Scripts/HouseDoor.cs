@@ -5,21 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class HouseDoor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public AudioSource door;
 
     void OnTriggerEnter(Collider other){
         if (other.tag == "door"){
             SceneManager.LoadScene(1);
+            door.Play();
         }
     }
 
