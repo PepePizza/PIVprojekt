@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LeaveHouse : MonoBehaviour
 {
-  
+    public GameObject indoorScene;
+    public GameObject bokkcanvas;
+
     // Update is called once per frame
     void Update()
     {
@@ -14,11 +16,19 @@ public class LeaveHouse : MonoBehaviour
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
             if (Physics.Raycast(ray, out hit, 100.0f))
             {
+            Debug.Log("Hit object tag: " + hit.collider.gameObject.tag);
+
                 if(hit.collider.gameObject.tag == "door")
                 {
                     SceneManager.LoadScene(0);
+                }
+                if (hit.collider.gameObject.tag == "bookopen") 
+                {
+                    //indoorScene.SetActive(false);
+                    bokkcanvas.SetActive(true);
                 }
             }
         }

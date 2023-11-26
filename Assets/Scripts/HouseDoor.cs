@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class HouseDoor : MonoBehaviour
 {
-    public AudioSource door;
-
+    public GameObject indoorScene;
     void OnTriggerEnter(Collider other){
         if (other.tag == "door"){
             SceneManager.LoadScene(1);
-            door.Play();
+        }
+        if (other.tag == "bookopen")
+        {
+            indoorScene.SetActive(false);
         }
     }
 

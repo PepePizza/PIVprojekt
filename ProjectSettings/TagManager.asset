@@ -6,6 +6,7 @@ TagManager:
   tags:
   - door
   - music
+  - bookopen
   layers:
   - Default
   - TransparentFX
