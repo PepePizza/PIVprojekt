@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class LeaveHouse : MonoBehaviour
 {
     public GameObject indoorScene;
     public GameObject bokkcanvas;
+    public GameObject mapCanvas;
 
     // Update is called once per frame
     void Update()
@@ -17,7 +19,7 @@ public class LeaveHouse : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit, 100.0f))
+            if (Physics.Raycast(ray, out hit, 100.0f) && !EventSystem.current.IsPointerOverGameObject())
             {
             Debug.Log("Hit object tag: " + hit.collider.gameObject.tag);
 
@@ -30,8 +32,13 @@ public class LeaveHouse : MonoBehaviour
                     //indoorScene.SetActive(false);
                     bokkcanvas.SetActive(true);
                 }
+                if (hit.collider.gameObject.tag == "map") 
+                {
+                    //indoorScene.SetActive(false);
+                    mapCanvas.SetActive(true);
+                }
             }
         }
-
     }
+
 }
