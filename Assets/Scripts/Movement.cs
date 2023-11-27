@@ -8,6 +8,8 @@ public class Movement : MonoBehaviour
     public float movementspeed = 5f;
 
     public AudioSource WalkingSound;
+
+    private bool isMoving = false;
     
     // Update is called once per frame
     void Update()
@@ -18,16 +20,23 @@ public class Movement : MonoBehaviour
         if (move != Vector3.zero)
         {
             transform.forward = move;
-            //WalkingSound.Play();
-        }
-        
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) ||Input.GetKey(KeyCode.D))
-        {
-            WalkingSound.enabled = true;
+            isMoving = true;
         }
         else
         {
-            WalkingSound.enabled = false;
+            isMoving = false;
+        }
+        
+        if (isMoving)
+        {
+            if (!WalkingSound.isPlaying)
+            {
+                WalkingSound.Play();
+            }
+        }
+        else
+        {
+            WalkingSound.Stop();
         }
     }
 }
