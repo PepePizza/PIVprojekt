@@ -8,6 +8,8 @@ TagManager:
   - music
   - bookopen
   - map
+  - boat
+  - cauldron
   layers:
   - Default
   - TransparentFX

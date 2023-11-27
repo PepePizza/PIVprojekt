@@ -9,6 +9,7 @@ public class LeaveHouse : MonoBehaviour
     public GameObject indoorScene;
     public GameObject bokkcanvas;
     public GameObject mapCanvas;
+    public GameObject cauldronCanvas;
 
     // Update is called once per frame
     void Update()
@@ -29,13 +30,19 @@ public class LeaveHouse : MonoBehaviour
                 }
                 if (hit.collider.gameObject.tag == "bookopen") 
                 {
-                    //indoorScene.SetActive(false);
                     bokkcanvas.SetActive(true);
                 }
                 if (hit.collider.gameObject.tag == "map") 
                 {
-                    //indoorScene.SetActive(false);
                     mapCanvas.SetActive(true);
+                }
+                if (hit.collider.gameObject.tag == "boat") 
+                {
+                    SceneManager.LoadScene(0);
+                }
+                if (hit.collider.gameObject.tag == "cauldron") 
+                {
+                    cauldronCanvas.SetActive(true);
                 }
             }
         }
