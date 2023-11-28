@@ -3,8 +3,9 @@ Overview of the Game: This Project was inspired by two games: ‘Animal Crossing
 
 ## The main parts of the game 
 
-|   Player  | Duck, moved with the keyboard WASD or arrow keys              |
+|     |               |
 | :-------- | :------------------------- |
+|   Player  | Duck, moved with the keyboard WASD or arrow keys|
 |   Camera  | Is attached to the player and controlled with Cinemachine to follow the player|
 | Potion items  | Cactus, Roses and Mushrooms. When “picked up” a counter goes up, maxing and the game object is immediately destroyed |
 | Map  | The map is in the house on the first island, and from there the player can travel by clicking on the UI |
