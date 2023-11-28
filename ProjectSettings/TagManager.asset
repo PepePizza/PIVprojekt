@@ -10,6 +10,10 @@ TagManager:
   - map
   - boat
   - cauldron
+  - rosebundle
+  - mushroom
+  - cactus
+  - itemManagertag
   layers:
   - Default
   - TransparentFX

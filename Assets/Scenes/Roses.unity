@@ -2979,9 +2979,10 @@ GameObject:
   m_Component:
   - component: {fileID: 942001995}
   - component: {fileID: 942001996}
+  - component: {fileID: 942001997}
   m_Layer: 0
   m_Name: Roses
-  m_TagString: Untagged
+  m_TagString: rosebundle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3022,6 +3023,27 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!65 &942001997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942001994}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4326496, y: 0.52408314, z: 0.42647052}
+  m_Center: {x: 0.039150238, y: 0.13856423, z: 0.059225082}
 --- !u!1 &961728569
 GameObject:
   m_ObjectHideFlags: 0
