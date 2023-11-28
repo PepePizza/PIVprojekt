@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems;
 
 public class MapScript : MonoBehaviour
 {
@@ -12,5 +11,4 @@ public class MapScript : MonoBehaviour
     {
     SceneManager.LoadScene(sceneToLoad);
     }
-
 }

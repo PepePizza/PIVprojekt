@@ -13,7 +13,6 @@ public class CollectedItems : MonoBehaviour
 
         GameObject[] ItemManagerObj = GameObject.FindGameObjectsWithTag("itemManagertag");
         
-        //Only play the audio once
         if (ItemManagerObj.Length > 1)
         {
            Destroy(this.gameObject);
@@ -21,5 +20,16 @@ public class CollectedItems : MonoBehaviour
 
         //Don't destroy when loading new scene
         DontDestroyOnLoad(this.gameObject);
+    }
+
+    void Update()
+    {
+        if (ItemsFound >= 3)
+        {
+            if (GameObject.Find("CauldronCanvas") != null)
+            {
+            GameObject.Find("CauldronCanvas").transform.GetChild(0).GetChild(2).gameObject.SetActive(true);
+            }
+        }
     }
 }
