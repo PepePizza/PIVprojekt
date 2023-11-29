@@ -11,3 +11,7 @@ Overview of the Game: This Project was inspired by two games: ‘Animal Crossing
 | 3 Islands   | Each Island contains a required ingredient. They are on different scenes and can be traveled to via the map |
 | Map  | The map is in the house on the first island, and from there the player can travel to the other islands by clicking on the UI |
 | Cauldron   | The Cauldron is where the potion is made, but it is only possible to make the potion if all the ingredients have been found |
+
+
+Uploading Recording_29-11-2023_09_26_43.mp4…
+
