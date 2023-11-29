@@ -13,5 +13,6 @@ Overview of the Game: This Project was inspired by two games: ‘Animal Crossing
 | Cauldron   | The Cauldron is where the potion is made, but it is only possible to make the potion if all the ingredients have been found |
 
 
-Uploading Recording_29-11-2023_09_26_43.mp4…
+
+https://github.com/PepePizza/PIVprojekt/assets/112694016/6f8d4464-871d-4b24-8a78-8e29457f3f2e
 
